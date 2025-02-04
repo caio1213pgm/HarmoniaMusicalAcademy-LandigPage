@@ -4,26 +4,11 @@ import Header from "../components/Header";
 
 function ContatosPage(){
     return (
-        <div>
+        <div className="bodyContatos">
             <Header/>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <h1>Contatos</h1>
-            <div className="container"><Formulario/></div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <div className="container">
+                <Formulario/>
+            </div>
             <Footer/>
         </div>
     )

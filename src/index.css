@@ -52,7 +52,7 @@
 
 
 .inputForm{
-  padding: 0.5rem;
+  padding: 0.8rem 0.5rem;
   border-radius: 1rem;
   border: none;
 }
@@ -65,7 +65,7 @@
   border: none;
 }
 .Formulario{
-  background: #003776;
+  background: #FFC107;
   display: flex;
   flex-direction: column;
   width: 600px;
@@ -76,7 +76,8 @@
   font-weight: 600;
 }
 .container{
-  width: 100%;
+  height: 100vh;
+  align-content: center;
 }
 
 
@@ -145,6 +146,7 @@
     font-size: 1.4rem;
   }
 }
+
 .textoCard{
   text-align: center;
   font-size: 2.5rem;
@@ -190,6 +192,7 @@
 .testimonialContainer{
   width: 100%;
   height: 70vh;
+  margin-bottom: 9rem;
 }
 
 .testimonialContainer2{
@@ -197,7 +200,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 70vh;
+  height: 90vh;
   width: 100%;
   position: absolute;
   z-index: -2;
@@ -206,20 +209,20 @@
   background-color: #00000098;
   position: absolute;
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   z-index: -1;
 }
 .testimonialTXT{
   display: flex;
   justify-content: center;
-  padding: 6% 0 0 0;
+  padding: 4% 0 0 0;
   width: 100%;
   font-size: 2rem;
   color: #fff;
 }
 .testimonialContent{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   padding: 1rem;
   justify-content: center;
   margin-top: 1rem;
@@ -227,13 +230,16 @@
 }
 .testimonialCard{
   background:#f0f0f0ff ;
+  text-align: center;
   padding: 1.5rem 1rem;
   box-shadow: 7px 7px 7px -3px rgba(0,0,0,0.3);
   border-radius: 1rem;
+  width: 600px;
 
   h4{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     font-size: 1.7rem
   }
@@ -263,6 +269,10 @@
 }
 .txt{
   color: #fff;
+}
+
+.bodyContatos{
+  background-color: #003776;
 }
 
 
