@@ -7,10 +7,10 @@ function Formulario() {
   const [email, setEmail] = useState("");
   const [aberto, setAberto] = useState(false);
 
-  function isOpen(){
-    if(nome === "" || email === ""){
+  function isOpen() {
+    if (nome === "" || email === "") {
       return alert("Preencha todos os campos");
-    } else{
+    } else {
       // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       aberto ? setAberto(false) : setAberto(true);
     }
@@ -27,23 +27,26 @@ function Formulario() {
     setEmail(event.target.value);
   }
 
-
   return (
     <form action="" className="Formulario">
-      <label className="txtForms">Nome:</label>
-      <InputTXT
-        txtPlace="Digite seu nome"
-        className="inputForm"
-        handleChange={handleChangeNome}
-        type="text"
-      />
-      <label className="txtForms">Email:</label>
-      <InputTXT
-        txtPlace="Digite seu email"
-        className="inputForm"
-        handleChange={handleChangeEmail}
-        type="email"
-      />
+      <div className="Formulario__input">
+        <label className="txtForms">Nome:</label>
+        <InputTXT
+          txtPlace="Digite seu nome"
+          className="inputForm"
+          handleChange={handleChangeNome}
+          type="text"
+        />
+      </div>
+      <div className="Formulario__input">
+        <label className="txtForms">Email:</label>
+        <InputTXT
+          txtPlace="Digite seu email"
+          className="inputForm"
+          handleChange={handleChangeEmail}
+          type="email"
+        />
+      </div>
 
       <DialogTestimonial
         name="Formulário de inscrição"

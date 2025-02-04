@@ -55,8 +55,12 @@
   padding: 0.8rem 0.5rem;
   border-radius: 1rem;
   border: none;
+  background-color: #003776;
+  color: #fff;
 }
 .botaoForms{
+  background-color: #003776;
+  color: #fff;
   width: 100%;
   margin-top: 10px;
   padding: 0.5rem;
@@ -66,18 +70,30 @@
 }
 .Formulario{
   background: #FFC107;
+  color: #003776;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   width: 600px;
   padding: 3rem 2rem;
+  gap: 2rem;
+}
+.Formulario__input{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .txtForms{
   font-size: 1.5rem;
   font-weight: 600;
 }
 .container{
+  margin-top: 4rem;
   height: 100vh;
-  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
 }
 
 
