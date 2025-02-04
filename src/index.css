@@ -1,0 +1,275 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.botao{
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 0rem;
+  background: #FFD700;
+  color: #002855;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+.botaoCard{
+  background: #FFD700;
+  color: #002855;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.botaoDialog{
+  background: #002855;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.7s;
+}
+.botaoDialog:hover{
+  background: #003776;
+}
+.botaoCard:hover{
+  background: #FFC107;
+}
+.botao:hover{
+  background: #FFC107;
+}
+
+
+.inputForm{
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+}
+.botaoForms{
+  width: 100%;
+  margin-top: 10px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: none;
+}
+.Formulario{
+  background: #003776;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 3rem 2rem;
+}
+.txtForms{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.container{
+  width: 100%;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #002855;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 3rem;
+  p{
+    font-size: 1.5rem;
+  }
+}
+.textoColor{
+  display: flex;
+  color: black;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+.allHeader{
+  width: 100%;
+  height: 100vh;
+}
+
+.back-header{
+  z-index: 1;
+  position: absolute;
+  background-image: url(../src/assets/pexels-chris-f-38966-18857141.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  align-items: end;
+  padding: 0 2rem;
+}
+.back-header__logo{
+  background-color: #000000c5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.back-header-texto{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: absolute;
+  color: #fff;
+  z-index: 3;
+  padding: 20% 0;
+  h3{
+    font-size: 2.3rem;
+    margin-bottom: 0.5%;
+  }
+  p{
+    width: 50%;
+    font-size: 1.4rem;
+  }
+}
+.textoCard{
+  text-align: center;
+  font-size: 2.5rem;
+  background: #002855;
+  color: #FFD700;
+  padding: 3rem 0 0 0;
+}
+.card{
+  display: flex;
+  padding: 5rem 2rem;
+  width: 100%;
+  justify-content: center;
+  background: #002855;
+  h4{
+    font-size: 2rem;
+    width: 90%;
+  }
+  p{
+    width: 80%;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+  }
+}
+.cardContent{
+  border-radius: 10px;
+  padding: 1rem 0;
+  background:#f0f0f0ff ;
+  text-align: center;
+  img{
+    width: 50%;
+  }
+}
+.cardContentData{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mySwiper{
+  --swiper-navigation-color: #002855;
+}
+.testimonialContainer{
+  width: 100%;
+  height: 70vh;
+}
+
+.testimonialContainer2{
+  background-image: url(../src/assets/pexels-andreevaleksandar-27817774.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 70vh;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+}
+.testimonialContainer3{
+  background-color: #00000098;
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  z-index: -1;
+}
+.testimonialTXT{
+  display: flex;
+  justify-content: center;
+  padding: 6% 0 0 0;
+  width: 100%;
+  font-size: 2rem;
+  color: #fff;
+}
+.testimonialContent{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.testimonialCard{
+  background:#f0f0f0ff ;
+  padding: 1.5rem 1rem;
+  box-shadow: 7px 7px 7px -3px rgba(0,0,0,0.3);
+  border-radius: 1rem;
+
+  h4{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.7rem
+  }
+  p{
+    font-size: 1.2rem;
+    width: 95%;
+    margin-bottom: 10px;
+  }
+}
+
+.Footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002855;
+  color: #fff;
+  width: 100%;
+  padding:  3rem;
+  p{
+    color: #FFD700;
+    font-size: 1.5rem;
+  }
+}
+.FooterIcons{
+  display: flex;
+  gap: 0.8rem;
+}
+.txt{
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 1024px){
+  .teste{
+    p{
+      font-size: 0.8rem;
+    }
+  }
+}
