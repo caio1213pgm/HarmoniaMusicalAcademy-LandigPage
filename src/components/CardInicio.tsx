@@ -2,6 +2,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import professor from "../assets/professor.jpg";
 import { useNavigate } from "react-router";
+import { useState, useEffect } from "react";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Botao from "./Botao";
@@ -13,6 +14,7 @@ type conteudoCard = {
 };
 
 function CardInicio() {
+  const [slideView, setSlidesView] = useState(3)
   const cardContent: conteudoCard[] = [
     {
       title: "Aulas para Todos os Níveis",
@@ -48,12 +50,27 @@ function CardInicio() {
 
   const navigate = useNavigate();
 
+  function handleWindowSizeChange() {
+    if(window.innerWidth <= 750){
+      setSlidesView(1)
+    }else{
+      if(window.innerWidth > 750 && window.innerWidth <= 1100){
+        setSlidesView(2)
+      }
+    }
+  }
+  const effectSize = window.addEventListener("resize", handleWindowSizeChange)
+
+  useEffect(() => {
+    handleWindowSizeChange()
+  }, [effectSize]);
+
   return (
     <>
       <Swiper
         pagination={{ clickable: true }}
         spaceBetween={50}
-        slidesPerView={3}
+        slidesPerView={slideView}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"

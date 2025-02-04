@@ -3,17 +3,8 @@ import Header from "../components/Header";
 
 function ServicosPage(){
     return (
-        <div className="container">
+        <div className="">
             <Header/>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
             <Footer/>
         </div>
     )
