@@ -92,6 +92,7 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10rem;
 }
@@ -111,10 +112,10 @@
 }
 .textoColor{
   display: flex;
-  color: black;
-  font-size: 1.2rem;
+  color: #000000c2;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
 }
 .allHeader{
   width: 100%;

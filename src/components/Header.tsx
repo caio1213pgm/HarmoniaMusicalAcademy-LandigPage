@@ -67,9 +67,7 @@ export default function HideAppBar(props: Props) {
               >
                 <ListItemText
                   primary={
-                    <a href="" className="textoColor">
-                      {item.text}
-                    </a>
+                    <h2 className="textoColor">{item.text}</h2>
                   }
                 />
               </ListItemButton>
