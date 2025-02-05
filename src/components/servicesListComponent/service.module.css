@@ -1,0 +1,40 @@
+.serviceLista{
+    background: #002855;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 9rem 1rem 1rem 1rem;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.card{
+    background-color: #f0f0f0ff;
+    width: 600px;
+    padding: 1.2rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+.cardBody{
+    font-size: 1.2rem;
+}
+.cardHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.botao{
+    background-color: #002855;
+    color: #f0f0f0ff;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: 3px solid #03489c;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+.botao:hover{
+    background-color: #03489c;
+}
