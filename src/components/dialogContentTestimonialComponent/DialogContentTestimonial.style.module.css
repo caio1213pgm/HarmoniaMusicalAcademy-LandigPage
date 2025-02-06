@@ -1,0 +1,14 @@
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.body{
+    font-size: 1.2rem;
+    text-align: justify;
+}

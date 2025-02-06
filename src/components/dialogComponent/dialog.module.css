@@ -1,0 +1,69 @@
+.container {
+    margin: auto;
+    padding: 1rem 0.5rem;
+
+    border: 3px solid #bbbbbbdb;
+    border-radius: 10px;
+
+    background-color: #e0e0e0;
+
+    width: 30%;
+    transition: all 1.5s;
+
+    &[open] {
+        animation: fadeIn 0.5s forwards;
+
+        &::backdrop {
+            animation: backdropFadeIn 0.5s forwards;
+        }
+    }
+}
+
+.container:active {
+    transform: scale(0.4);
+}
+.container:hover{
+    width: 45%;
+    padding: 1.8rem 1rem;
+}
+
+.close {
+    padding: 0.5rem 2.5rem;
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+
+    border-radius: 8px;
+    border: 3px solid #00316ca4;
+
+    background: #002855;
+    color: #fff;
+
+    cursor: pointer;
+    transition: all 0.7s;
+}
+.close:hover{
+    background: #003776;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        translate: 0 -1em;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+
+@keyframes backdropFadeIn {
+    from {
+        background: hsl(0 0% 0% / 0%);
+    }
+
+    to {
+        background: hsl(0 0% 0% / 50%);
+    }
+}
