@@ -34,11 +34,15 @@
 .botaoDialog{
   background: #002855;
   color: #fff;
-  padding: 0.6rem 1rem;
+
+  padding: 0.6rem 2rem;
   font-size: 1.2rem;
-  border: none;
+
+  border: 3px solid #00316ca4;
   border-radius: 10px;
+
   transition: all 0.7s;
+  cursor: pointer;
 }
 .botaoDialog:hover{
   background: #003776;
@@ -110,12 +114,14 @@
     font-size: 1.5rem;
   }
 }
-.textoColor{
+.textNavHeader{
   display: flex;
-  color: #000000c2;
+  color: #000000d8;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   font-weight: 600;
+  gap: 1rem;
 }
 .allHeader{
   width: 100%;

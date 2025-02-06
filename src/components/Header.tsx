@@ -15,6 +15,9 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
 import { NavLink } from "react-router";
+import HomeIcon from '@mui/icons-material/Home';
+import ContactsIcon from '@mui/icons-material/Contacts';
+import InfoIcon from '@mui/icons-material/Info';
 
 interface Props {
   window?: () => Window;
@@ -22,9 +25,9 @@ interface Props {
 }
 const drawerWidth = 300;
 const navItens = [
-  { path: "/", text: "Início" },
-  { path: "/contatos", text: "Contatos" },
-  { path: "/servicos", text: "Serviços" },
+  { path: "/", text: "Início", icon: <HomeIcon/> },
+  { path: "/contatos", text: "Contatos", icon: <ContactsIcon/> },
+  { path: "/servicos", text: "Serviços", icon: <InfoIcon/> },
 ];
 
 function HideOnScroll(props: Props) {
@@ -59,15 +62,14 @@ export default function HideAppBar(props: Props) {
       <List>
         {navItens.map((item) => (
           <ListItem key={item.path} disablePadding>
-            <NavLink to={item.path}>
-              <ListItemButton
-                sx={{
-                  textAlign: "center",
-                }}
-              >
+            <NavLink to={item.path} style={{ textDecoration: "none" }}>
+              <ListItemButton>
                 <ListItemText
                   primary={
-                    <h2 className="textoColor">{item.text}</h2>
+                    <h2 className="textNavHeader">
+                      {item.icon}
+                      {item.text}
+                    </h2>
                   }
                 />
               </ListItemButton>

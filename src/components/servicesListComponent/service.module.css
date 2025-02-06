@@ -1,5 +1,5 @@
 .serviceLista{
-    background: #002855;
+    background: #003776;
     display: flex;
     flex-wrap: wrap;
     padding: 9rem 1rem 1rem 1rem;
@@ -30,7 +30,7 @@
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
-    border: 3px solid #03489c;
+    border: 3px solid #00316ca4;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.7s;
