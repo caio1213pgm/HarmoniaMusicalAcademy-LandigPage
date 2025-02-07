@@ -1,6 +1,6 @@
 type ButtonProps = {
     funcao: () => void;
-    texto: string;
+    texto: React.ReactNode;
     classe: string
 }
 function Botao({funcao, texto, classe}: ButtonProps) {

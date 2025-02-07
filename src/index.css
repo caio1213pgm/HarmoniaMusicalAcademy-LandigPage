@@ -4,6 +4,25 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.botaoSend{
+  background-color: #002855;
+  color: #fff;
+  border: 3px solid #00316ca4;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  transition: all 0.7s;
+  p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+}
+.botaoSend:hover{
+  background-color: #00316c;
+}
+
 .botao{
   display: flex;
   align-items: center;

@@ -1,34 +1,34 @@
 import { SetStateAction, useState } from "react";
+import { useNavigate } from "react-router";
 import InputTXT from "./InputTXT";
-import DialogTestimonial from "./DialogTestimonial";
+import Botao from "./Botao";
+import SendIcon from '@mui/icons-material/Send';
 
 function Formulario() {
-  const [nome, setNome] = useState("");
-  const [email, setEmail] = useState("");
-  const [aberto, setAberto] = useState(false);
+  const navigate = useNavigate();
+  const [nomeValue, setNomeValue] = useState("");
+  const [emailValue, setEmailValue] = useState("");
 
-  function isOpen() {
-    if (nome === "" || email === "") {
-      return alert("Preencha todos os campos");
-    } else {
-      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-      aberto ? setAberto(false) : setAberto(true);
-    }
+  function enviarFormulario() {
+    if(nomeValue === "" || emailValue === "") {
+      return alert("Preencha todos os campos!");
+    } return navigate("/boasVindas", { state: { nome: nomeValue, email: emailValue } });
+    
   }
 
   function handleChangeNome(event: {
     target: { value: SetStateAction<string> };
   }) {
-    setNome(event.target.value);
+    setNomeValue(event.target.value);
   }
   function handleChangeEmail(event: {
     target: { value: SetStateAction<string> };
   }) {
-    setEmail(event.target.value);
+    setEmailValue(event.target.value);
   }
 
   return (
-    <form action="" className="Formulario">
+    <div className="Formulario">
       <div className="Formulario__input">
         <label className="txtForms">Nome:</label>
         <InputTXT
@@ -47,22 +47,8 @@ function Formulario() {
           type="email"
         />
       </div>
-
-      <DialogTestimonial
-        name="Formulário de inscrição"
-        text={
-          "Olá " +
-          nome +
-          "! Obrigado pelo seu interesse em se matricular na nossa escola de música, abra a caixa de mensagem do seu email: " +
-          email +
-          " e procure por nós lá, Até mais!"
-        }
-        contentButton="Enviar"
-        classe="botaoForms"
-        isOpen={isOpen}
-        aberto={aberto}
-      />
-    </form>
+      <Botao funcao={() => enviarFormulario()} texto={<p>Enviar {<SendIcon/>}</p>} classe="botaoSend"/>
+    </div>
   );
 }
 

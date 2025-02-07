@@ -16,6 +16,7 @@ function InputTXT({ txtPlace, className, handleChange, type }: inputProps) {
       placeholder={txtPlace}
       className={className}
       onChange={handleChange}
+      required
     />
   );
 }

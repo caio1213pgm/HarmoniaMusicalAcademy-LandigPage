@@ -7,6 +7,7 @@ register();
 import "swiper/css";
 import ContatosPage from "./pages/ContatosPage.tsx";
 import ServicosPage from "./pages/ServicosPage.tsx";
+import BoasVindas from "./pages/BoasVindas.tsx";
 
 
 createRoot(document.getElementById("root")!).render(
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")!).render(
       <Route path="/" element={<App />} />
       <Route path="/contatos" element={<ContatosPage/>}/>
       <Route path="/servicos" element={<ServicosPage/>}/>
+      <Route path="/boasVindas?" element={<BoasVindas/>}/>
     </Routes>
   </BrowserRouter>
 );

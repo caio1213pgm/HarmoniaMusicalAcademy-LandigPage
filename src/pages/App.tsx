@@ -1,5 +1,5 @@
 import "../App.css";
-import BackHeader from "../components/BackHeader";
+import BackHeader from "../components/backHeaderComponent/BackHeader";
 import Footer from "../components/Footer";
 import HideAppBar from "../components/Header";
 import Inicio from "../components/Inicio";
@@ -12,7 +12,7 @@ function App() {
       <BackHeader />
       <Inicio />
       <Testimonial />
-      <Footer/>
+      <Footer />
     </>
   );
 }
