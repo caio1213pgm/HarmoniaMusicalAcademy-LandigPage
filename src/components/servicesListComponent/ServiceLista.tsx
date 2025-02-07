@@ -1,5 +1,5 @@
 import style from "./service.module.css";
-import { cardData } from "../CardInicio";
+import { cardData } from "../carrosselComponent/CardInicio";
 import { useNavigate } from "react-router";
 import Botao from "../Botao";
 

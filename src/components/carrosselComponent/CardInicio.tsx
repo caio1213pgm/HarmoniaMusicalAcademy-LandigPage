@@ -5,12 +5,13 @@ import { useNavigate } from "react-router";
 import React, { useState, useEffect } from "react";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Botao from "./Botao";
+import Botao from "../Botao";
 import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
 import SchoolIcon from '@mui/icons-material/School';
 import Groups2Icon from '@mui/icons-material/Groups2';
 import StraightenIcon from '@mui/icons-material/Straighten';
 import ChairIcon from '@mui/icons-material/Chair';
+import style from "./carrossel.module.css"
 type conteudoCard = {
   title: string;
   image: React.ReactNode;
@@ -85,11 +86,11 @@ function CardInicio() {
         slidesPerView={slideView}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper"
+        className={style.mySwiper}
       >
         {cardData.map((card) => (
-          <SwiperSlide key={card.id} className="cardContent">
-            <div className="cardContentData">
+          <SwiperSlide key={card.id} className={style.card}>
+            <div className={style.cardContent}>
               <h4>{card.title}</h4>
               <p>{card.paragraph}</p>
               <Botao
