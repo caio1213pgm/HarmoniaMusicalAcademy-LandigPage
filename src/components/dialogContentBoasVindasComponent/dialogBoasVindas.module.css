@@ -28,7 +28,7 @@
 }
 
 .dialog::backdrop {
-    background: #002855;
+    background: var(--Primary-Blue);
 }
 
 .container {
@@ -38,7 +38,7 @@
 }
 
 .title {
-    color: #002855;
+    color: var(--Primary-Blue);
     font-size: 2rem;
     text-align: center;
 }
@@ -51,7 +51,7 @@
 }
 
 .email {
-    color: #002855;
+    color: var(--Primary-Blue);
     font-weight: 700;
     font-size: 1.2rem;
 }
@@ -60,15 +60,15 @@
     font-size: 1.2rem;
 }
 .p2{
-    color: #002855;
+    color: var(--Primary-Blue);
     font-size: 1.8rem;
     font-weight: 700;
     text-align: center;
 }
 
 .botao{
-    background-color: #002855;
-    color: #FFD700;
+    background-color: var(--Primary-Blue);
+    color: var(--Primary-Yellow);
 
     border: 3px solid #00316ca4;
     border-radius: 10px;

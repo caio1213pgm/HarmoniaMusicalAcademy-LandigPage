@@ -35,14 +35,14 @@
     border-radius: 8px;
     border: 3px solid #00316ca4;
 
-    background: #002855;
+    background: var(--Primary-Blue);
     color: #fff;
 
     cursor: pointer;
     transition: all 0.7s;
 }
 .close:hover{
-    background: #003776;
+    background: var(--Second-Blue);
 }
 
 @keyframes fadeIn {

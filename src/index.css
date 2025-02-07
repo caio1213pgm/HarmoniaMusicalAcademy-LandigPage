@@ -4,8 +4,15 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+:root{
+  --White: #fff;
+  --Primary-Blue: #002855;
+  --Second-Blue: #003776;
+  --Primary-Yellow: #FFD700;
+}
 .botaoSend{
-  background-color: #002855;
+  background-color: var(--Primary-Blue);
   color: #fff;
   border: 3px solid #00316ca4;
   border-radius: 8px;
@@ -142,52 +149,7 @@
   font-weight: 600;
   gap: 1rem;
 }
-.allHeader{
-  width: 100%;
-  height: 100vh;
-}
 
-.back-header{
-  z-index: 1;
-  position: absolute;
-  background-image: url(../src/assets/pexels-chris-f-38966-18857141.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 8rem;
-  align-items: end;
-  padding: 0 2rem;
-}
-.back-header__logo{
-  background-color: #000000c5;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-.back-header-texto{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  position: absolute;
-  color: #fff;
-  z-index: 3;
-  padding: 20% 0;
-  h3{
-    font-size: 2.3rem;
-    margin-bottom: 0.5%;
-  }
-  p{
-    width: 50%;
-    font-size: 1.4rem;
-  }
-}
 
 .textoCard{
   text-align: center;

@@ -1,0 +1,50 @@
+.sizeHeader {
+    width: 100%;
+    height: 100vh;
+}
+
+.backHeader {
+    z-index: 1;
+    position: absolute;
+    background-image: url(../src/assets/pexels-chris-f-38966-18857141.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    align-items: end;
+    padding: 0 2rem;
+}
+
+.headerBlack {
+    background-color: #000000c5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.headerContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: absolute;
+    color: #fff;
+    z-index: 3;
+    padding: 20% 0;
+
+    h3 {
+        font-size: 2.3rem;
+        margin-bottom: 0.5%;
+    }
+
+    p {
+        width: 50%;
+        font-size: 1.4rem;
+    }
+}
