@@ -1,0 +1,50 @@
+.container {
+    background: var(--Second-Yellow);
+    color: var(--Primary-Blue);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 3rem 2rem;
+    gap: 2rem;
+}
+
+.boxInput {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    label {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+
+.input {
+    padding: 0.8rem 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--Primary-Blue);
+    color: #fff;
+}
+
+.botao {
+    background-color: var(--Primary-Blue);
+    color: #fff;
+    border: 3px solid var(--Border-blue);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    transition: all 0.7s;
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        gap: 1rem;
+    }
+}
+
+.botao:hover {
+    background-color: var(--Second-Blue);
+}

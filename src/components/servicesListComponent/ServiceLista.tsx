@@ -7,7 +7,7 @@ function ServiceLista() {
   const navigate = useNavigate();
 
   return (
-    <div className={style.serviceLista}>
+    <div className={style.container}>
       {cardData.map((card) => (
         <div key={card.id} className={style.card}>
           <div className={style.cardHeader}>

@@ -1,8 +1,8 @@
-.serviceLista{
-    background: #003776;
+.container{
+    background: var(--Second-Blue);
     display: flex;
     flex-wrap: wrap;
-    padding: 9rem 1rem 1rem 1rem;
+    padding: 9rem 1rem 3rem 1rem;
     gap: 1.5rem;
     justify-content: center;
 }
@@ -25,16 +25,16 @@
 }
 
 .botao{
-    background-color: #002855;
-    color: #f0f0f0ff;
+    background-color: var(--Primary-Blue);
+    color: #fff;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
-    border: 3px solid #00316ca4;
+    border: 3px solid var(--Border-blue);
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.7s;
 }
 .botao:hover{
-    background-color: #03489c;
+    background-color: var(--Second-Blue);
 }

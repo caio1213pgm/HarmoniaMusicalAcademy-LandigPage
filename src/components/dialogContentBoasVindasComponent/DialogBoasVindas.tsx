@@ -27,9 +27,9 @@ function DialogBoasVindas() {
     <dialog className={style.dialog} ref={dialogRef}>
       <div className={style.container}>
         <div className={style.head}>
-          {<AutoAwesomeIcon sx={{ color: "#002855" }} />}
+          {<AutoAwesomeIcon  />}
           <h1 className={style.title}>Boas vindas {locationName}!</h1>
-          {<AutoAwesomeIcon sx={{ color: "#002855" }} />}
+          {<AutoAwesomeIcon />}
         </div>
         <p className={style.p1}>
           Obrigado pelo seu interesse em fazer aula conosco, mandaremos uma
@@ -40,7 +40,7 @@ function DialogBoasVindas() {
           Obs: Se o nosso email não chegar após 10 minutos, dê uma olhada na
           caixa de spam e a lixeira.
         </p>
-        <p className={style.p2}>Até Mais! {<WavingHandIcon sx={{ color: "#002855" }} />}</p>
+        <p className={style.p2}>Até Mais! {<WavingHandIcon />}</p>
         <Botao
           funcao={() => navigate("/")}
           texto={<p>Ir para a página inicial {<ArrowForwardIcon/>}</p>}

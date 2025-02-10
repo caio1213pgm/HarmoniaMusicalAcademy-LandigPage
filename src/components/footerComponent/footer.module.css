@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Primary-Blue);
+    width: 100%;
+    padding: 3rem;
+
+    p {
+        color: var( --Primary-Yellow);
+        font-size: 1.5rem;
+    }
+}
+
+.content {
+    display: flex;
+    gap: 0.8rem;
+
+    svg {
+        font-size: 4.5rem;
+        color: #fff;
+    }
+}

@@ -6,8 +6,8 @@ function BackHeader() {
   const navigate = useNavigate();
   return (
     <div className={style.sizeHeader}>
-      <div className={style.backHeader}></div>
-      <div className={style.headerBlack}></div>
+      <div className={style.background}></div>
+      <div className={style.blur}></div>
       <div className={style.headerContent}>
         <div>
           <h3>Descubra o Músico que Existe em Você!</h3>
@@ -18,7 +18,7 @@ function BackHeader() {
         </div>
         <Botao
           texto="Faça uma aula gratuita"
-          classe="botao"
+          classe={style.botao}
           funcao={() => {
             navigate("/contatos");
           }}

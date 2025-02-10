@@ -1,6 +1,7 @@
 import RecommendIcon from "@mui/icons-material/Recommend";
-import Dialog from "./dialogComponent/Dialog";
-import DialogContentTestimonial from "./dialogContentTestimonialComponent/DialogContentTestimonial";
+import Dialog from "../dialogComponent/Dialog";
+import DialogContentTestimonial from "../dialogContentTestimonialComponent/DialogContentTestimonial";
+import style from "./tetimonials.module.css"
 
 type pessoaDoDepoimento = {
   nome: string;
@@ -37,20 +38,18 @@ const testimonial: pessoaDoDepoimento[] = [
 ];
 
 function Testimonial() {
-
   return (
-    <div className="testimonialContainer">
+    <div className={style.container}>
+      <div className={style.background}></div>
+      <div className={style.blur}></div>
 
-      <div className="testimonialContainer2"></div>
-      <div className="testimonialContainer3"></div>
-
-      <div className="testimonialTXT">
+      <div className={style.title}>
         <h3>Depoimentos de pais e alunos:</h3>
       </div>
 
-      <div className="testimonialContent">
+      <div className={style.grade}>
         {testimonial.map((depoimento) => (
-          <div key={depoimento.id} className="testimonialCard">
+          <div key={depoimento.id} className={style.card}>
             <h4>
               <RecommendIcon /> {depoimento.nome}
             </h4>
@@ -65,12 +64,11 @@ function Testimonial() {
                 />
               }
               textButton="Ler mais"
-              classButton="botaoDialog"
+              classButton={style.botao}
             />
           </div>
         ))}
       </div>
-      
     </div>
   );
 }

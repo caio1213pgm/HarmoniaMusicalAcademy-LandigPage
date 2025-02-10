@@ -3,7 +3,7 @@
     height: 100vh;
 }
 
-.backHeader {
+.background {
     z-index: 1;
     position: absolute;
     background-image: url(../src/assets/pexels-chris-f-38966-18857141.jpg);
@@ -20,7 +20,7 @@
     padding: 0 2rem;
 }
 
-.headerBlack {
+.blur {
     background-color: #000000c5;
     position: absolute;
     width: 100%;
@@ -47,4 +47,23 @@
         width: 50%;
         font-size: 1.4rem;
     }
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 0rem;
+    background: var(--Primary-Yellow);
+    color: var(--Primary-Blue);
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.botao:hover {
+    background: var(--Second-Yellow);
 }

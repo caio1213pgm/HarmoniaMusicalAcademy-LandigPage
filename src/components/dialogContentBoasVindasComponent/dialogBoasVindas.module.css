@@ -2,7 +2,7 @@
     margin: auto;
     padding: 1rem 2rem;
 
-    border: 3px solid #00316ca4;
+    border: 3px solid var(--Border-blue);
     border-radius: 10px;
 
     background-color: #e0e0e0;
@@ -48,6 +48,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    color: var(--Primary-Blue);
 }
 
 .email {
@@ -70,7 +71,7 @@
     background-color: var(--Primary-Blue);
     color: var(--Primary-Yellow);
 
-    border: 3px solid #00316ca4;
+    border: 3px solid var(--Border-blue);
     border-radius: 10px;
     padding: 1rem 0;
     font-size: 1.5rem;
@@ -84,7 +85,7 @@
     }
 }
 .botao:hover{
-    background-color: #003776;
+    background-color: var(--Second-Blue);
 }
 
 @keyframes fadeIn {

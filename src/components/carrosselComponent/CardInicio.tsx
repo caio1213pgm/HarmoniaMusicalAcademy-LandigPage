@@ -98,7 +98,7 @@ function CardInicio() {
                   navigate("/servicos");
                 }}
                 texto="Saiba mais"
-                classe="botaoCard"
+                classe={style.botao}
               />
             </div>
           </SwiperSlide>
