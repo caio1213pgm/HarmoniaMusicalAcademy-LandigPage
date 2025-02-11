@@ -4,9 +4,9 @@ import ServiceLista from "../components/servicesListComponent/ServiceLista";
 
 function ServicosPage() {
   return (
-    <div className="">
+    <div>
       <Header />
-      <div className="">
+      <div>
         <ServiceLista />
       </div>
       <Footer />

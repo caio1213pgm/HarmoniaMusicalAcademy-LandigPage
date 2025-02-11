@@ -86,7 +86,7 @@
     height: 110vh;
   }
   .background, .blur{
-    height: 160vh;
+    height: 150vh;
   }
   .title{
     padding: 4% 1rem;
@@ -97,6 +97,7 @@
   }
   .card{
     padding: 1rem 0.8rem;
+
     p{
       width: 100%;
     }
