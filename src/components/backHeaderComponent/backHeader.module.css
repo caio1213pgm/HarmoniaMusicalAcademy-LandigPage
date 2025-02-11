@@ -67,3 +67,26 @@
 .botao:hover {
     background: var(--Second-Yellow);
 }
+@media only screen and (max-width: 768px) {
+    .sizeHeader, .background, .blur{
+        height: 80vh;
+    }
+    .headerContent{
+        padding: 35% 1rem 0 ;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        h3{
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+        p{
+            width: 100%;
+        }
+    }
+
+    .botao{
+        font-size: 1.2rem;
+        padding: 2rem 1.5rem;
+    }
+}

@@ -35,9 +35,8 @@
 .grade {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
   gap: 1rem;
 }
 
@@ -64,7 +63,7 @@
   }
 }
 
-.botao{
+.botao {
   background: var(--Primary-Blue);
   color: #fff;
 
@@ -77,6 +76,29 @@
   transition: all 0.7s;
   cursor: pointer;
 }
-.botao:hover{
+
+.botao:hover {
   background: var(--Second-Blue);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    height: 110vh;
+  }
+  .background, .blur{
+    height: 160vh;
+  }
+  .title{
+    padding: 4% 1rem;
+    text-align: center;
+  }
+  .grade{
+    padding: 0 1rem;
+  }
+  .card{
+    padding: 1rem 0.8rem;
+    p{
+      width: 100%;
+    }
+  }
 }

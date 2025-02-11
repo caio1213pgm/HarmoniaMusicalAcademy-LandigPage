@@ -10,9 +10,14 @@
     display: flex;
     padding: 5rem 2rem;
     width: 100%;
-    justify-content: center;
     background: var(--Primary-Blue);
+}
 
+.card {
+    border-radius: 10px;
+    padding: 1rem 0;
+    background: #f0f0f0ff;
+    text-align: center;
     h4 {
         font-size: 2rem;
         width: 90%;
@@ -22,17 +27,6 @@
         width: 80%;
         font-size: 1.3rem;
         margin: 2rem 0;
-    }
-}
-
-.card {
-    border-radius: 10px;
-    padding: 1rem 0;
-    background: #f0f0f0ff;
-    text-align: center;
-
-    img {
-        width: 50%;
     }
 }
 
@@ -47,7 +41,7 @@
     --swiper-navigation-color: var(--Primary-Blue);
 }
 
-.botao{
+.botao {
     background: var(--Primary-Yellow);
     color: var(--Primary-Blue);
     padding: 1rem 1.5rem;
@@ -59,6 +53,24 @@
     cursor: pointer;
     transition: all 0.7s;
 }
-.botao:hover{
+
+.botao:hover {
     background: var(--Second-Yellow);
-  }
+}
+
+@media only screen and (max-width: 768px) {
+    .title{
+        font-size: 2rem;
+    }
+    .carrossel{
+        padding: 3rem 1rem;
+    }
+    .card{
+        h4{
+            width: 80%;
+        }
+        p{
+            width: 90%;
+        }
+    }
+}
