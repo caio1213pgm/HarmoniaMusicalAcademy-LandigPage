@@ -38,7 +38,7 @@ function DialogBoasVindas() {
         <p className={style.email}>{locationEmail}</p>
         <p className={style.p1}>
           Obs: Se o nosso email não chegar após 10 minutos, dê uma olhada na
-          caixa de spam e a lixeira.
+          caixa de spam e na lixeira.
         </p>
         <p className={style.p2}>Até Mais! {<WavingHandIcon />}</p>
         <Botao
