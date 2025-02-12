@@ -6,7 +6,7 @@
 .background {
     z-index: 1;
     position: absolute;
-    background-image: url(../src/assets/pexels-chris-f-38966-18857141.jpg);
+    background-image: url(../../assets/pexels-chris-f-38966-18857141.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
