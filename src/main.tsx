@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./pages/App.tsx";
 import { register } from "swiper/element";
 register();
-import "swiper/css";
+import "swiper/swiper-bundle.css";
 import ContatosPage from "./pages/ContatosPage/ContatosPage.tsx";
 import ServicosPage from "./pages/ServicosPage.tsx";
 import BoasVindas from "./pages/BoasVindas.tsx";

@@ -3,8 +3,6 @@ import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useNavigate } from "react-router";
 import React, { useState, useEffect } from "react";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import Botao from "../Botao";
 import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
 import SchoolIcon from '@mui/icons-material/School';
