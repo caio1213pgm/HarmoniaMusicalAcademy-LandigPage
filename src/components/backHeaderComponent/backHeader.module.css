@@ -67,27 +67,61 @@
 .botao:hover {
     background: var(--Second-Yellow);
 }
+
 @media only screen and (max-width: 767px) {
-    .sizeHeader, .background, .blur{
+
+    .sizeHeader,
+    .background,
+    .blur {
         height: 80vh;
     }
-    .headerContent{
-        padding: 35% 1rem 0 ;
+
+    .headerContent {
+        padding: 35% 1rem 0;
         flex-direction: column;
         gap: 3rem;
         align-items: center;
-        h3{
+
+        h3 {
             font-size: 1.8rem;
             margin-bottom: 0.8rem;
         }
-        p{
+
+        p {
             width: 100%;
         }
     }
 
-    .botao{
+    .botao {
         font-size: 1.2rem;
         padding: 2rem 1.5rem;
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .sizeHeader,
+    .background,
+    .blur {
+        height: 70vh;
+    }
+
+    .headerContent {
+        padding: 25% 2rem 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        h3 {
+            font-size: 2.3rem;
+            text-align: center;
+        }
+
+        p {
+            width: 100%;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+    }
+
+}

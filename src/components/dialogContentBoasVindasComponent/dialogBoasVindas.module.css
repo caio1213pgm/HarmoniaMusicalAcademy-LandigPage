@@ -116,6 +116,32 @@
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .dialog{
+        width: 80%;
+        padding: 1rem;
+
+    }
+    .dialog:hover{
+        width: 80%;
+        padding: 1rem;
+    }
+    .title{
+        font-size: 2.4rem;
+    }
+    .p1, .email{
+        font-size: 1.4rem;
+    }
+    .p2{
+        font-size: 2rem;
+    }
+    .head{
+        svg{
+            font-size: 2rem;
+        }
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
