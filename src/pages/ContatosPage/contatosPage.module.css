@@ -7,16 +7,16 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
     gap: 10rem;
-    padding: 5rem 0 0 0;
+    padding: 5rem 1rem 0 ;
 }
 
 @media only screen and (max-width: 767px) {
     .content {
         gap: 0;
         height: 160vh;
+        flex-wrap: wrap;
         padding: 5rem 0.5rem 0 ;
     }
 }
@@ -25,5 +25,6 @@
     .content {
         gap: 0;
         height: 130vh;
+        flex-wrap: wrap;
     }
 }
