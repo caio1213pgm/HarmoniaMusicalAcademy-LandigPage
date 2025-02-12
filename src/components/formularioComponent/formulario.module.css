@@ -48,9 +48,3 @@
 .botao:hover {
     background-color: var(--Second-Blue);
 }
-
-@media only screen and (max-width: 768px){
-    .container{
-        
-    }
-}

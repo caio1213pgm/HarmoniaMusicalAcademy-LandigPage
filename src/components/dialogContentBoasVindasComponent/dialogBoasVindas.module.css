@@ -92,7 +92,7 @@
     background-color: var(--Second-Blue);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .dialog{
         width: 100%;
         padding: 1rem;

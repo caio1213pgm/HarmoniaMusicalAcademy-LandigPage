@@ -2,7 +2,7 @@ import DialogBoasVindas from "../components/dialogContentBoasVindasComponent/Dia
 
 function BoasVindas() {
   return (
-    <div className="boas-vindas">
+    <div>
         <DialogBoasVindas/>
     </div>
   );

@@ -39,7 +39,7 @@
     background-color: var(--Second-Blue);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .cardHeader{
         font-size: 0.8rem;
     }

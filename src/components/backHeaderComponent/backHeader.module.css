@@ -67,7 +67,7 @@
 .botao:hover {
     background: var(--Second-Yellow);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .sizeHeader, .background, .blur{
         height: 80vh;
     }
@@ -90,3 +90,4 @@
         padding: 2rem 1.5rem;
     }
 }
+
